@@ -8,3 +8,6 @@ Route::get('/', function () {
 
 Route::get('/serverDetail', [ServerDetailController::class, 'index']);
 Route::get('/serverDetail/getData', [ServerDetailController::class, 'getData'])->name('serverDetail.getData');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
